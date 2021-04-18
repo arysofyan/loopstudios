@@ -14,6 +14,17 @@ $img-item: (
 	8: "../images/mobile/image-fisheye.jpg",
 );
 
+$img-item-desktop: (
+	1: "../images/desktop/image-deep-earth.jpg",
+	2: "../images/desktop/image-night-arcade.jpg",
+	3: "../images/desktop/image-soccer-team.jpg",
+	4: "../images/desktop/image-grid.jpg",
+	5: "../images/desktop/image-from-above.jpg",
+	6: "../images/desktop/image-pocket-borealis.jpg",
+	7: "../images/desktop/image-curiosity.jpg",
+	8: "../images/desktop/image-fisheye.jpg",
+);
+
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 @import "./modules/header";
@@ -149,7 +160,7 @@ img {
 	}
 
 	.jumbotron {
-		background-image: url("images/desktop/image-hero.jpg");
+		background-image: url("../images/desktop/image-hero.jpg");
 		background-repeat: none;
 		background-position: center;
 		background-size: cover;
@@ -208,6 +219,10 @@ img {
 		text-align: left;
 		position: relative;
 
+		img {
+			content: url("../images/desktop/image-interactive.jpg");
+		}
+
 		.item {
 			display: inline-block;
 			vertical-align: top;
@@ -219,6 +234,14 @@ img {
 				height: 500px;
 				text-align: center;
 				padding-top: 400px;
+			}
+
+			@each $index, $image in $img-item-desktop {
+				&:nth-child(#{$index}) {
+					.img-item {
+						background-image: url(#{$image});
+					}
+				}
 			}
 		}
 		.btn {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 .jumbotron {
-  background-image: url("images/mobile/image-hero.jpg");
+  background-image: url("../images/mobile/image-hero.jpg");
   padding-bottom: 288px;
   margin-bottom: 160px;
 }
@@ -200,7 +200,7 @@ img {
     display: none;
   }
   .jumbotron {
-    background-image: url("images/desktop/image-hero.jpg");
+    background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -259,6 +259,9 @@ img {
     text-align: left;
     position: relative;
   }
+  .section img {
+    content: url("../images/desktop/image-interactive.jpg");
+  }
   .section .item {
     display: inline-block;
     vertical-align: top;
@@ -272,6 +275,30 @@ img {
     height: 500px;
     text-align: center;
     padding-top: 400px;
+  }
+  .section .item:nth-child(1) .img-item {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+  }
+  .section .item:nth-child(2) .img-item {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+  }
+  .section .item:nth-child(3) .img-item {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+  }
+  .section .item:nth-child(4) .img-item {
+    background-image: url(../images/desktop/image-grid.jpg);
+  }
+  .section .item:nth-child(5) .img-item {
+    background-image: url(../images/desktop/image-from-above.jpg);
+  }
+  .section .item:nth-child(6) .img-item {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+  }
+  .section .item:nth-child(7) .img-item {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+  }
+  .section .item:nth-child(8) .img-item {
+    background-image: url(../images/desktop/image-fisheye.jpg);
   }
   .section .btn {
     position: absolute;
