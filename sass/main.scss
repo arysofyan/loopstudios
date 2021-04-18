@@ -38,7 +38,6 @@ $img-item-desktop: (
 }
 
 body {
-	// min-width: 447px;
 	font-family: "Alata", sans-serif;
 	font-size: 15px;
 }
@@ -55,6 +54,10 @@ h3 {
 	text-transform: uppercase;
 }
 
+h2 {
+	font-size: 36px;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -69,9 +72,6 @@ img {
 	text-align: center;
 	margin-bottom: 80px;
 	.text-box {
-		h2 {
-			font-size: 36px;
-		}
 		p {
 			margin: 16px 0;
 			color: $darkGray;
@@ -79,16 +79,19 @@ img {
 	}
 
 	.item {
+		cursor: pointer;
 		.img-item {
 			margin: 10px 0;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
 
-			h3 {
-				font-size: 28px;
-				color: $white;
-			}
+			font-size: 28px;
+			color: $white;
+		}
+
+		&:hover {
+			opacity: 0.5;
 		}
 
 		@each $index, $image in $img-item {
@@ -110,6 +113,11 @@ img {
 		background-color: $white;
 		text-transform: uppercase;
 		letter-spacing: 6px;
+
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
 	}
 }
 
@@ -149,7 +157,7 @@ img {
 		padding-left: 20px;
 
 		h3 {
-			width: 50%;
+			width: 60%;
 		}
 	}
 }
@@ -216,8 +224,8 @@ img {
 
 	.section {
 		margin-bottom: 150px;
-		text-align: left;
 		position: relative;
+		text-align: left;
 
 		img {
 			content: url("../images/desktop/image-interactive.jpg");
@@ -225,8 +233,8 @@ img {
 
 		.item {
 			display: inline-block;
+			margin-top: 20px;
 			vertical-align: top;
-			justify-content: center;
 			width: 24%;
 
 			.img-item {
@@ -246,7 +254,7 @@ img {
 		}
 		.btn {
 			position: absolute;
-			top: -40px;
+			top: -30px;
 			right: 33px;
 		}
 	}

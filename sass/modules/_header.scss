@@ -8,6 +8,12 @@
 		padding-bottom: 64px;
 		display: flex;
 		justify-content: space-between;
+
+		a {
+			&:hover {
+				border-bottom: 3px solid;
+			}
+		}
 	}
 
 	.motto {

@@ -17,6 +17,10 @@
           justify-content: space-between;
 }
 
+.jumbotron nav a:hover {
+  border-bottom: 3px solid;
+}
+
 .jumbotron .motto {
   border: 1px solid;
   text-align: left;
@@ -76,6 +80,10 @@ h3 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -91,13 +99,13 @@ img {
   margin-bottom: 80px;
 }
 
-.section .text-box h2 {
-  font-size: 36px;
-}
-
 .section .text-box p {
   margin: 16px 0;
   color: #8c8c8c;
+}
+
+.section .item {
+  cursor: pointer;
 }
 
 .section .item .img-item {
@@ -105,11 +113,12 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.section .item .img-item h3 {
   font-size: 28px;
   color: white;
+}
+
+.section .item:hover {
+  opacity: 0.5;
 }
 
 .section .item:nth-child(1) .img-item {
@@ -156,6 +165,11 @@ img {
   letter-spacing: 6px;
 }
 
+.section .btn:hover {
+  background-color: black;
+  color: white;
+}
+
 @media screen and (max-width: 478px) {
   body {
     text-align: center;
@@ -191,7 +205,7 @@ img {
     padding-left: 20px;
   }
   .img-item h3 {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -256,18 +270,16 @@ img {
   }
   .section {
     margin-bottom: 150px;
-    text-align: left;
     position: relative;
+    text-align: left;
   }
   .section img {
     content: url("../images/desktop/image-interactive.jpg");
   }
   .section .item {
     display: inline-block;
+    margin-top: 20px;
     vertical-align: top;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 24%;
   }
   .section .item .img-item {
@@ -302,7 +314,7 @@ img {
   }
   .section .btn {
     position: absolute;
-    top: -40px;
+    top: -30px;
     right: 33px;
   }
   #hamburger {
