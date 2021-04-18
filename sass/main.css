@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+.jumbotron {
+  background-image: url("/images/mobile/image-hero.jpg");
+  padding-bottom: 288px;
+  margin-bottom: 160px;
+}
+
+.jumbotron nav {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.jumbotron .motto {
+  border: 1px solid;
+  text-align: left;
+  color: white;
+  padding: 40px;
+}
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 75px;
+  background-color: black;
+}
+
+footer #footer-logo {
+  margin-bottom: 33px;
+}
+
+footer #footer-links {
+  list-style-type: none;
+}
+
+footer #footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer #footer-text {
+  color: #7a7a7a;
+}
+
+footer #footer-text a {
+  color: aqua;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section .text-box h2 {
+  font-size: 36px;
+}
+
+.section .text-box p {
+  margin: 16px 0;
+  color: #8c8c8c;
+}
+
+.section .item .img-item {
+  margin: 10px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section .item .img-item h3 {
+  font-size: 28px;
+  width: 50%;
+  color: white;
+}
+
+.section .item:nth-child(1) .img-item {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
+
+.section .item:nth-child(2) .img-item {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+
+.section .item:nth-child(3) .img-item {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.section .item:nth-child(4) .img-item {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+
+.section .item:nth-child(5) .img-item {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+
+.section .item:nth-child(6) .img-item {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.section .item:nth-child(7) .img-item {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+
+.section .item:nth-child(8) .img-item {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+
+.section .btn {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 478px) {
+  body {
+    text-align: center;
+  }
+  #footer-links {
+    text-align: center;
+  }
+  #footer-links li {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  #social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+    margin: 45px auto 27px auto;
+  }
+  .img-item {
+    width: 100%;
+    height: 153px;
+    text-align: left;
+    padding-top: 70px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hide-desktop {
+    display: none;
+  }
+  .jumbotron {
+    background-image: url("/images/desktop/image-hero.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 145px;
+  }
+  .jumbotron nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jumbotron nav #logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: left;
+  }
+  .jumbotron nav a {
+    color: white;
+    text-decoration: none;
+  }
+  .jumbotron .motto {
+    width: 652px;
+  }
+  .jumbotron .motto h1 {
+    font-size: 4.5rem;
+  }
+  .container {
+    width: 1115px;
+    margin: 0 auto;
+  }
+  .box-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .box-wrapper .text-box {
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    padding: 94px;
+    left: 510px;
+    top: 180px;
+  }
+  .col {
+    width: 49%;
+    display: inline-block;
+  }
+  .section {
+    margin-bottom: 150px;
+    text-align: left;
+  }
+  .section .item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: inline-block;
+  }
+  .section .item .img-item {
+    height: 153px;
+  }
+  #hamburger {
+    display: none;
+  }
+  footer #social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  footer #social-media li {
+    margin-left: 20px;
+  }
+  footer #footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #footer-links li {
+    margin-right: 20px;
+  }
+  footer #footer-text {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=main.css.map */
